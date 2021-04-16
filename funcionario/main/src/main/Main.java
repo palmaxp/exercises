@@ -8,5 +8,6 @@ public class Main {
         System.out.println(f1.getDepartamento());
         f1.setNome("joao");
         System.out.println(f1.getNome());
+        f1.recebeAumento(1000);
     }    
 }
