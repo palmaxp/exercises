@@ -3,8 +3,7 @@ package mediaaluno;
 public class MediaAluno {
     public MediaAluno(String nome) {
         this.nome = nome;
-    }
-    
+    }    
     String nome;
     int notas[] = new int[3];
     
@@ -16,7 +15,7 @@ public class MediaAluno {
         param[2] = num3;
         for (int i = 0; i < notas.length; i++) {
             if(param[i] >= 0 && param[i] <= 100){
-                System.out.println(notas[i] = param[i]);
+                System.out.println(notas[i] = param[i]);                        
             } else{
                 notas[i] = 0;
                 System.out.println("Erro. São aceitos apenas números entre 0 e 100");
@@ -24,7 +23,11 @@ public class MediaAluno {
         }
     }
     public void calcularMedia(){
-        int media = (notas[0] + notas[1] + notas[2]) / 3;
+        int soma = 0;
+        for (int i = 0; i < notas.length; i++) {    
+            soma += notas[i];
+        }
+        int media = soma / notas.length;
         System.out.println("A média é " + media);
     }
     
