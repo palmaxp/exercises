@@ -8,7 +8,6 @@ public class MediaAluno {
     int notas[] = new int[3];
     
     public void adicionarNotas(int num1, int num2, int num3){
-        System.out.println("Olá " + this.nome);
         int param[] = new int[3];
         param[0] = num1;
         param[1] = num2;
@@ -24,13 +23,12 @@ public class MediaAluno {
     }
     public void calcularMedia(){
         int soma = 0;
-        for (int i = 0; i < notas.length; i++) {    
+        for (int i = 0; i < notas.length; i++) {
             soma += notas[i];
         }
         int media = soma / notas.length;
         System.out.println("A média é " + media);
-    }
-    
+    }    
     public static void main(String[] args) {
         MediaAluno aluno1 = new MediaAluno("gilson");
         aluno1.adicionarNotas(3, 10, 10);
