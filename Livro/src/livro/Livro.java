@@ -14,9 +14,16 @@ public class Livro {
     int codigo;
     double preco;
     
+    public void mostrarLivros(){
+        System.out.println(this.id);
+        System.out.println(this.titulo);
+        System.out.println(this.autor);
+        System.out.println(this.codigo);
+        System.out.println(this.preco);
+        System.out.println("================");
+    }
+    
     public static void main(String[] args) {
-        Livro listaDeLivros[] = new Livro[10];
-        
         Livro livro1 = new Livro(1, "Harry Potter", "JK", 100, 10.00);
         Livro livro2 = new Livro(2, "As armas da persuassão", "Robert C.", 102, 15.00);
         Livro livro3 = new Livro(3, "Pense e enriqueça", "Napoleon Hill", 103, 30.00);
@@ -27,25 +34,20 @@ public class Livro {
         Livro livro8 = new Livro(8, "Superando O Carcere Da Emoçao", "August Cury", 108, 90.00);
         Livro livro9 = new Livro(9, "Como fazer amigos e influenciar pessoas", "Dale Carnegie", 109, 15.00);
         Livro livro10 = new Livro(10, "Manual de persuasão do FBI", "Jack Schafer", 110, 25.00);
-        
-        listaDeLivros[0] = livro1;
-        listaDeLivros[1] = livro2;
-        listaDeLivros[2] = livro3;
-        listaDeLivros[3] = livro4;
-        listaDeLivros[4] = livro5;
-        listaDeLivros[5] = livro6;
-        listaDeLivros[6] = livro7;
-        listaDeLivros[7] = livro8;
-        listaDeLivros[8] = livro9;
-        listaDeLivros[9] = livro10;
-  
+        Livro listaDeLivros[] = {
+            livro1,
+            livro2,
+            livro3,
+            livro4,
+            livro5,
+            livro6,
+            livro7,
+            livro8,
+            livro9,
+            livro10
+        };   
         for (int i = 0; i < listaDeLivros.length; i++) {
-            System.out.println(listaDeLivros[i].id);
-            System.out.println(listaDeLivros[i].titulo);
-            System.out.println(listaDeLivros[i].autor);
-            System.out.println(listaDeLivros[i].codigo);
-            System.out.println(listaDeLivros[i].preco);
-            System.out.println("==================");
+            listaDeLivros[i].mostrarLivros();
         }
     }
 }
