@@ -7,7 +7,7 @@ public class Livro {
         this.autor = autor;
         this.codigo = codigo;
         this.preco = preco;
-    }    
+    }
     int id;
     String titulo;
     String autor;
@@ -15,6 +15,8 @@ public class Livro {
     double preco;
     
     public static void main(String[] args) {
+        Livro listaDeLivros[] = new Livro[10];
+        
         Livro livro1 = new Livro(1, "Harry Potter", "JK", 1, 10.00);
         Livro livro2 = new Livro(2, "As armas da persuassão", "Robert C.", 2, 15.00);
         Livro livro3 = new Livro(3, "Pense e enriqueça", "Napoleon Hill", 3, 30.00);
@@ -25,5 +27,25 @@ public class Livro {
         Livro livro8 = new Livro(8, "Superando O Carcere Da Emoçao", "August Cury", 8, 90.00);
         Livro livro9 = new Livro(9, "Como fazer amigos e influenciar pessoas", "Dale Carnegie", 9, 15.00);
         Livro livro10 = new Livro(10, "Manual de persuasão do FBI", "Jack Schafer", 10, 25.00);
-    }       
+        
+        listaDeLivros[0] = livro1;
+        listaDeLivros[1] = livro2;
+        listaDeLivros[2] = livro3;
+        listaDeLivros[3] = livro4;
+        listaDeLivros[4] = livro5;
+        listaDeLivros[5] = livro6;
+        listaDeLivros[6] = livro7;
+        listaDeLivros[7] = livro8;
+        listaDeLivros[8] = livro9;
+        listaDeLivros[9] = livro10;
+        
+        for (int i = 0; i < listaDeLivros.length; i++) {
+            System.out.println(listaDeLivros[i].id);
+            System.out.println(listaDeLivros[i].titulo);
+            System.out.println(listaDeLivros[i].autor);
+            System.out.println(listaDeLivros[i].codigo);
+            System.out.println(listaDeLivros[i].preco);
+            System.out.println("==================");
+        }
+    }
 }
