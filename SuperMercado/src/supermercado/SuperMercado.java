@@ -27,12 +27,12 @@ public class SuperMercado {
         for (int i = 0; i < pd1.getI(); i++) {
             System.out.println("Produtos: " + itens[i].getProduto().getNome());
             System.out.println(" | Quantidade: " + itens[i].getQtdComprada());
-            System.out.println(" | Valor: " + itens[i].getProduto().getPreco());
+            System.out.println(" | Valor da Unidade: " + itens[i].getProduto().getPreco());
         }
         System.out.println("Total: " + pd1.getValorTotal());
         
-        System.out.println("Item 1 - Quantidade " + p1.getQtdEstoque());
-        System.out.println("Item 2 - Quantidade " + p2.getQtdEstoque());
+        System.out.println("Item 1 - Quantidade: " + p1.getQtdEstoque());
+        System.out.println("Item 2 - Quantidade: " + p2.getQtdEstoque());
 
     }
 }
