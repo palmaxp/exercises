@@ -4,6 +4,10 @@ public class Item {
     public Item(Produto produto, int qtdComprada) {
         this.produto = produto;
         this.qtdComprada = qtdComprada;
+        if (this.qtdComprada > this.produto.getQtdEstoque()) {
+            this.qtdComprada = this.produto.getQtdEstoque();
+        }
+        this.produto.tirarEstoque(this.qtdComprada);
     }
     
     private Produto produto;

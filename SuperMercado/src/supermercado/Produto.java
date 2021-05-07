@@ -29,6 +29,10 @@ public class Produto {
     }
     public void setQtdEstoque(int qtdEstoque) {
         this.qtdEstoque = qtdEstoque;
-    }  
+    }
     
+    public int tirarEstoque(int quantidade){
+        this.qtdEstoque -= quantidade;
+        return this.qtdEstoque;
+    }    
 }
