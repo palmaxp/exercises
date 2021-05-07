@@ -1,14 +1,15 @@
 package supermercado;
 
 public class Produto {
-    public Produto(String nome, double preco, int qntEstoque) {
+    public Produto(String nome, double preco, int qtdEstoque) {
         this.nome = nome;
         this.preco = preco;
-        this.qntEstoque = qntEstoque;
-    }    
+        this.qtdEstoque = qtdEstoque;
+    }
+    
     private String nome;
     private double preco;
-    private int qntEstoque;
+    private int qtdEstoque;
 
     public String getNome() {
         return nome;
@@ -16,17 +17,18 @@ public class Produto {
     public double getPreco() {
         return preco;
     }
-    public int getQntEstoque() {
-        return qntEstoque;
+    public int getQtdEstoque() {
+        return qtdEstoque;
     }
-    
+
     public void setNome(String nome) {
         this.nome = nome;
     }
     public void setPreco(double preco) {
         this.preco = preco;
     }
-    public void setQntEstoque(int qntEstoque) {
-        this.qntEstoque = qntEstoque;
-    }    
+    public void setQtdEstoque(int qtdEstoque) {
+        this.qtdEstoque = qtdEstoque;
+    }  
+    
 }
