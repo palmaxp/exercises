@@ -1,8 +1,11 @@
 package animal;
 
 public class Gato extends Animal{
+    public Gato(String nome, int idade){
+        super(nome, idade);
+    }    
     @Override
     public void emitirSom(){
-        System.out.println("Miar");
+        System.out.println("Miar " + this.nome + " " + this.idade);
     }
 }
