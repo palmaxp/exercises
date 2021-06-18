@@ -46,5 +46,11 @@ public class GamePanel extends JPanel implements ActionListener{
         repaint();
     }
     
-   
+    public Timer getTimer() {
+        return timer;
+    } 
+
+    public Target getTarget() {
+        return target;
+    }
 }

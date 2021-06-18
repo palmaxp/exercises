@@ -9,7 +9,7 @@ public class Target extends Node{
         
     public Target(int x, int y) {
         super(x, y);
-        this.target = new ImageIcon("src/Assets/bolinha.png");
+        this.target = new ImageIcon("src/Assets/sapinhobonito.png");
     }
     @Override
     public void desenhar(Graphics g) {
