@@ -11,6 +11,10 @@ public class Usuario {
     public static boolean criptografarSenha() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public static int get(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     // buscar
     public Usuario(int codigo, String nome, String email, String genero, Date data_nascimento) {
         this.codigo = codigo;
